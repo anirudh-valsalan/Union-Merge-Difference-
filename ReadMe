@@ -1,0 +1,177 @@
+The class contain method for finding intersection,union and difference of two list which contain elements(non-duplicate) in sorted order.
+
+
+-- Test main method which will instruct user to input
+	1)The length of firstList.
+	2)The elements of first list.
+	3)The lenghth of secondList.
+	4)The elements of second list.
+
+	Assume that all the input will be in the form of Integers and elements are inserted in sorted order with no duplicate elements.
+
+	
+-- Intersect method :Method to perform the intersection.
+    
+   parameters  :list1 -  The first list.
+               :list2 -  The second list.
+			   :outlist - The output List,which will contain non-duplicate elements which are common to list1 and list2 in sorted order.
+   All list extends set interface so duplicate elements will not be present.
+
+-- Union Method  : Method to perform union operation.
+   parameters  :list1 -  The first list.
+               :list2 -  The second list.
+			   :outlist - The output List,which will contain non-duplicate elements present in list1 and list2 in sorted order
+   All list extends set interface so duplicate elements will not be present.
+
+
+
+-- difference method:Method to perform difference operation.
+   parameters  :list1 -  The first list.
+               :list2 -  The second list.
+			   :outlist - The output List,which will contain non-duplicate elements present in list1 and not in list2 in sorted order.
+   All list extends set interface so duplicate elements will not be present.
+
+
+-- nextElement method : Method which will return the next element.
+   input parameter : listIterator
+   output parameter :next element in the iterator.
+  
+-- printElements method: method to print elemennts.
+   parameter : list - list to print the elemennts.
+  
+  
+  Sample input and output
+=======================================================================
+  case1 :Length and elements of both list are same
+=======================================================================
+Please Enter the length of first list
+3
+Please Enter elements of first list
+1
+2
+3
+Please Enter the length of second list
+3
+Please Enter elements of second list
+1
+2
+3
+Please Enter your choice.
+ 1 : Find Intersection of elements.
+ 2 : Find union of elements.
+ 3 : Find difference of elements(Elements present in List1 and not in List2)
+ 4 : Exit
+1
+The output list is
+1
+2
+3
+Please Enter your choice.
+ 1 : Find Intersection of elements.
+ 2 : Find union of elements.
+ 3 : Find difference of elements(Elements present in List1 and not in List2)
+ 4 : Exit
+2
+The output list is
+1
+2
+3
+Please Enter your choice.
+ 1 : Find Intersection of elements.
+ 2 : Find union of elements.
+ 3 : Find difference of elements(Elements present in List1 and not in List2)
+ 4 : Exit
+3
+The output list is
+Sorry there is no element to show
+  
+=============================================================== 
+ case2 :Lengths of both list is same but elements are different.
+===============================================================
+
+Please Enter the length of first list
+3
+Please Enter elements of first list
+1
+2
+3
+Please Enter the length of second list
+3
+Please Enter elements of second list
+4
+5
+6
+Please Enter your choice.
+ 1 : Find Intersection of elements.
+ 2 : Find union of elements.
+ 3 : Find difference of elements(Elements present in List1 and not in List2)
+ 4 : Exit
+1
+The output list is
+Sorry there is no element to show
+Please Enter your choice.
+ 1 : Find Intersection of elements.
+ 2 : Find union of elements.
+ 3 : Find difference of elements(Elements present in List1 and not in List2)
+ 4 : Exit
+2
+The output list is
+1
+2
+3
+4
+5
+6
+Please Enter your choice.
+ 1 : Find Intersection of elements.
+ 2 : Find union of elements.
+ 3 : Find difference of elements(Elements present in List1 and not in List2)
+ 4 : Exit
+3
+The output list is
+1
+2
+3
+===================================================================================
+ case3 :Lengths and elements are different
+===================================================================================
+Please Enter the length of first list
+2
+Please Enter elements of first list
+4
+5
+Please Enter the length of second list
+3
+Please Enter elements of second list
+1
+2
+3
+Please Enter your choice.
+ 1 : Find Intersection of elements.
+ 2 : Find union of elements.
+ 3 : Find difference of elements(Elements present in List1 and not in List2)
+ 4 : Exit
+1
+The output list is
+Sorry there is no element to show
+Please Enter your choice.
+ 1 : Find Intersection of elements.
+ 2 : Find union of elements.
+ 3 : Find difference of elements(Elements present in List1 and not in List2)
+ 4 : Exit
+2
+The output list is
+1
+2
+3
+4
+5
+Please Enter your choice.
+ 1 : Find Intersection of elements.
+ 2 : Find union of elements.
+ 3 : Find difference of elements(Elements present in List1 and not in List2)
+ 4 : Exit
+3
+The output list is
+4
+5
